@@ -17,6 +17,7 @@
     <div class="containerHead">
         <h1>GEMA Y MIGUEL</h1>
     </div>
+
     <div class="containerChrono">
         <p><span id="dias"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span id="horas"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -24,18 +25,14 @@
             <span id="segundos"></span></p>
             <p>dias horas minutos segundos</p>
     </div>
+
     <div class="containerCancion">
-        <audio id="reproductor" controls autoplay>
+        <audio controls autoplay>
             <source src="resources/SomosDos.mp3" type="audio/mp3">
             Tu navegador no soporta la etiqueta de audio.
         </audio>
-        <script>
-            const audio = document.getElementById("reproductor");
-            audio.addEventListener('contextmenu', function(e) {
-                e.preventDefault();  // Evita que el menú de contexto se muestre
-            });
-        </script>
-    </div>  
+    </div>
+
     <div class="containerDescription">
         <h3 class="text-center">Descripcion y Ubicacion</h3>
     </div>  

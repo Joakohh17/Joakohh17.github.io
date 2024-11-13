@@ -27,14 +27,6 @@ body {
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
 }
 
-.reproductor {
-    <button onclick="document.getElementById('player').play()">Play</button>
-    <button onclick="document.getElementById('player').pause()">Pausa</button>
-    <button onclick="document.getElementById('player').load()">Stop</button>
-    <button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
-    <button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
-}
-
 .containerDescription {
     background-color: #0a6c7e;  /* Color de fondo */
 }
