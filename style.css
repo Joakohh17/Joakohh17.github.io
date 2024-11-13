@@ -19,6 +19,7 @@ body {
     background-color: #acabab;  /* Color de fondo */
     text-align: center;
     color: #ffffff;
+    margin-top: 20px;
 }
 
 #chrono {
@@ -47,9 +48,16 @@ body {
     margin-top: 20px;
 }
 
+.containerIntroduction
+{
+    margin-top: 70px;
+    text-align: center;
+}
+
 .containerDescription {
     background-color: #acabab;  /* Color de fondo */
-    margin-top: 20px;
+    margin-top: 40px;
+    color: #ffffff;
 }
 
 .containerLocalitation {
@@ -58,7 +66,7 @@ body {
     justify-content: center;  /* Centrar horizontalmente */
     align-items: center;  /* Centrar verticalmente */
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .linePersonalized {
