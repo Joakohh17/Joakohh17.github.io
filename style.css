@@ -5,31 +5,50 @@ body {
 
 .containerHead {
     display: flex;  /* Activar el modelo de flexbox */
-    justify-content: center;  /* Centrar horizontalmente */
+    flex-direction: column;  /* Alinear los elementos verticalmente */
+    justify-content: center;  /* Centrar horizontalmente (por defecto) */
     align-items: center;  /* Centrar verticalmente */
     background-image: url('resources/fondo1.jpg');
     background-size: cover;  /* Hace que la imagen cubra todo el div */
     background-repeat: no-repeat;  /* Evita que la imagen se repita */
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
-    height: 300px;
+    height: 700px;
 }
 
 .containerChrono {
-    background-color: #eeeeee;  /* Color de fondo */
+    background-color: #acabab;  /* Color de fondo */
     text-align: center;
-    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+#chrono {
+    border-collapse: separate; /* Para que el border-spacing funcione */
+    margin: 0 auto;
+}
+
+#chrono th
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+}
+
+#chrono td
+{
+    text-align: center;
+    padding: 5px;
 }
 
 .containerReproductor {
-    background-color: #eeeeee;  /* Color de fondo */
     display: flex;  /* Activar el modelo de flexbox */
     justify-content: center;  /* Centrar horizontalmente */
     align-items: center;  /* Centrar verticalmente */
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
+    margin-top: 20px;
 }
 
 .containerDescription {
-    background-color: #c1e4eb;  /* Color de fondo */
+    background-color: #acabab;  /* Color de fondo */
     margin-top: 20px;
 }
 
@@ -42,5 +61,12 @@ body {
     margin-top: 20px;
 }
 
+.linePersonalized {
+    border: 0; /* Elimina el borde predeterminado */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    width: 50%; /* Ancho de la línea (puedes ajustarlo) */
+    margin: 20px auto; /* Márgenes para separar la línea de otros elementos */
+}
 
 
