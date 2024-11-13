@@ -19,13 +19,22 @@ body {
     font-size: 1.5rem;
 }
 
-.containerCancion {
+.containerReproductor {
     background-color: #eeeeee;  /* Color de fondo */
     display: flex;  /* Activar el modelo de flexbox */
     justify-content: center;  /* Centrar horizontalmente */
     align-items: center;  /* Centrar verticalmente */
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
 }
+
+.containerLocalitation {
+    background-color: #eeeeee;  /* Color de fondo */
+    display: flex;  /* Activar el modelo de flexbox */
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;  /* Centrar verticalmente */
+    width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
+}
+
 
 .containerDescription {
     background-color: #0a6c7e;  /* Color de fondo */
