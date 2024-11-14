@@ -5,14 +5,14 @@ body {
     background-repeat: repeat;  /* Evita que la imagen se repita */
 }
 
-h1, h2, h3, h6{
+h1, h2, h5{
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
 }
 
 p{
     font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 a{
@@ -96,7 +96,7 @@ a{
 }
 
 .lineUbication {
-    width: 10%; /* Ajusta el ancho de la línea */
+    width: 20%; /* Ajusta el ancho de la línea */
     margin: 0 auto; /* Centra la línea horizontal */
     height: 2px; /* Establece el grosor de la línea */
     background-color: #000;
@@ -104,7 +104,7 @@ a{
 }
 
 .lineUbicationBold {
-    width: 10%; /* Ajusta el ancho de la línea */
+    width: 20%; /* Ajusta el ancho de la línea */
     margin: 0 auto; /* Centra la línea horizontal */
     height: 5px; /* Establece el grosor de la línea */
     background-color: #000;
