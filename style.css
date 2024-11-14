@@ -5,6 +5,23 @@ body {
     background-repeat: repeat;  /* Evita que la imagen se repita */
 }
 
+h1, h2, h3, h6{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #000;
+}
+
 .containerHead {
     display: flex;  /* Activar el modelo de flexbox */
     flex-direction: column;  /* Alinear los elementos verticalmente */
@@ -14,14 +31,14 @@ body {
     background-repeat: no-repeat;  /* Evita que la imagen se repita */
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
     height: 600px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
 }
 
 .containerChrono {
     margin-top: 30px;
     background-color: rgba(172, 171, 171, 0.5);
-    text-align: center;
-    color: #ffffff;
-    
+    text-align: center;    
 }
 
 #chrono {
@@ -54,14 +71,14 @@ body {
     text-align: center;
 }
 
-.containerDescription {
-    background-color: #acabab;  /* Color de fondo */
+.containerCeremonia {
+    background-color: rgba(172, 171, 171, 0.5);
     margin-top: 40px;
-    color: #ffffff;
+    text-align: center;
 }
 
 .containerLocalitation {
-    background-color: #eeeeee;  /* Color de fondo */
+    background-color: rgba(172, 171, 171, 0.5);
     display: flex;  /* Activar el modelo de flexbox */
     justify-content: center;  /* Centrar horizontalmente */
     align-items: center;  /* Centrar verticalmente */
@@ -75,6 +92,22 @@ body {
     background-color: #000; /* Color de la línea */
     width: 50%; /* Ancho de la línea (puedes ajustarlo) */
     margin: 20px auto; /* Márgenes para separar la línea de otros elementos */
+}
+
+.lineUbication {
+    width: 10%; /* Ajusta el ancho de la línea */
+    margin: 0 auto; /* Centra la línea horizontal */
+    height: 2px; /* Establece el grosor de la línea */
+    background-color: #000;
+    border: none; /* Elimina el borde por defecto */
+}
+
+.lineUbicationBold {
+    width: 10%; /* Ajusta el ancho de la línea */
+    margin: 0 auto; /* Centra la línea horizontal */
+    height: 5px; /* Establece el grosor de la línea */
+    background-color: #000;
+    border: none; /* Elimina el borde por defecto */
 }
 
 
