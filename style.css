@@ -1,6 +1,8 @@
 body {
-    font-family: "Times New Roman", Times, serif;
-    background-color: #eeeeee;  /* Color de fondo */
+    font-family: 'Dancing Script', cursive;
+    background-image: url('resources/fondo.jpg');
+     background-size: cover;  /* Hace que la imagen cubra todo el div */
+    background-repeat: repeat;  /* Evita que la imagen se repita */
 }
 
 .containerHead {
@@ -8,18 +10,18 @@ body {
     flex-direction: column;  /* Alinear los elementos verticalmente */
     justify-content: center;  /* Centrar horizontalmente (por defecto) */
     align-items: center;  /* Centrar verticalmente */
-    background-image: url('resources/fondo1.jpg');
     background-size: cover;  /* Hace que la imagen cubra todo el div */
     background-repeat: no-repeat;  /* Evita que la imagen se repita */
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
-    height: 700px;
+    height: 600px;
 }
 
 .containerChrono {
-    background-color: #acabab;  /* Color de fondo */
+    margin-top: 30px;
+    background-color: rgba(172, 171, 171, 0.5);
     text-align: center;
     color: #ffffff;
-    margin-top: 20px;
+    
 }
 
 #chrono {
@@ -41,16 +43,14 @@ body {
 }
 
 .containerReproductor {
-    display: flex;  /* Activar el modelo de flexbox */
-    justify-content: center;  /* Centrar horizontalmente */
-    align-items: center;  /* Centrar verticalmente */
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
-    margin-top: 20px;
 }
 
 .containerIntroduction
 {
-    margin-top: 70px;
+    margin-top: 30px;
     text-align: center;
 }
 
