@@ -77,13 +77,14 @@ a{
     text-align: center;
 }
 
-.containerLocalitation {
-    background-color: rgba(172, 171, 171, 0.5);
-    display: flex;  /* Activar el modelo de flexbox */
-    justify-content: center;  /* Centrar horizontalmente */
-    align-items: center;  /* Centrar verticalmente */
-    width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
+.containerItinerary {
     margin-top: 40px;
+    text-align: center;
+}
+
+.containerFinal{
+    margin-top: 40px;
+    height: 200px;
 }
 
 .linePersonalized {
@@ -109,5 +110,6 @@ a{
     background-color: #000;
     border: none; /* Elimina el borde por defecto */
 }
+
 
 
