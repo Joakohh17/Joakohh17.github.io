@@ -5,9 +5,13 @@ body {
     background-repeat: repeat;  /* Evita que la imagen se repita */
 }
 
-h1, h2, h5{
+h1{
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
+}
+
+h5{
+    font-family: "Times New Roman", Times, serif;
 }
 
 p{
@@ -31,7 +35,6 @@ a{
     background-repeat: no-repeat;  /* Evita que la imagen se repita */
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
     height: 600px;
-    font-family: "Times New Roman", Times, serif;
     font-weight: normal;
 }
 
@@ -51,12 +54,14 @@ a{
     text-align: center;
     padding: 5px;
     font-size: 25px;
+    font-weight: normal;
 }
 
 #chrono td
 {
     text-align: center;
     padding: 5px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .containerReproductor {
@@ -80,6 +85,18 @@ a{
 .containerItinerary {
     margin-top: 40px;
     text-align: center;
+}
+
+.containerHotels {
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgba(172, 171, 171, 0.5);
+}
+
+.containerDressCode {
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgba(172, 171, 171, 0.5);
 }
 
 .containerFinal{
