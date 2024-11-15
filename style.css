@@ -9,9 +9,14 @@ h1{
 }
 
 h2{
-    font-size: 35px; /* Tamaño en píxeles */
+    font-size: 50px; /* Tamaño en píxeles */
 }
-h5{
+
+h3{
+    font-size: 40px; /* Tamaño en píxeles */
+}
+
+h5,h6{
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -27,23 +32,28 @@ a{
     color: #000;
 }
 
-.containerReproductor {
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
-}
-
 .containerHead {
-    margin-top: 170px;
+    height: 100vh;
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
     text-align: center;  
-    margin-bottom: 170px;  
+}
+
+.containerReproductor {
+    margin-top: 100px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.containerIntroduction {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Para asegurarse de que el video no se salga del div */
 }
 
 .containerChrono {
     margin-top: 30px;
     background-color: rgba(172, 171, 171, 0.5);
-    text-align: center;    
 }
 
 #chrono {
@@ -66,15 +76,8 @@ a{
     font-family: "Times New Roman", Times, serif;
 }
 
-.containerPlaneVideo {
-    margin-top: 30px;
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    overflow: hidden; /* Para asegurarse de que el video no se salga del div */
-}
 
-.containerPlaneVideo video{
+.containerIntroduction video{
     position: absolute;
     top: 45%;
     left: 50%;
@@ -86,6 +89,7 @@ a{
 }
 
 .containerTopPlaneVideo {
+    margin-top: 50px;
     margin-left: 30px;
     position: relative;
     z-index: 1; /* Hace que el contenido se vea encima del video */
@@ -94,17 +98,16 @@ a{
 
 .containerDownPlaneVideo
 {
-    margin-top: 170px;
+    margin-top: 300px;
     position: relative;
     z-index: 1; /* Hace que el contenido se vea encima del video */
-    text-align: right;
-    margin-right: 30px;
+    text-align: center;
 }
 
 
 .containerCeremonia {
     background-color: rgba(172, 171, 171, 0.5);
-    margin-top: 0px;
+    margin-top: 40px;
     text-align: center;
 }
 
