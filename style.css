@@ -1,15 +1,16 @@
 body {
     font-family: 'Dancing Script', cursive;
-    background-image: url('resources/fondo.jpg');
-     background-size: cover;  /* Hace que la imagen cubra todo el div */
-    background-repeat: repeat;  /* Evita que la imagen se repita */
+    background-color: #e1dbd6;
 }
 
 h1{
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
+    font-family: "Abril Fatface", serif;
+    font-size: 40px; /* Tamaño en píxeles */
 }
 
+h2{
+    font-size: 35px; /* Tamaño en píxeles */
+}
 h5{
     font-family: "Times New Roman", Times, serif;
 }
@@ -26,16 +27,17 @@ a{
     color: #000;
 }
 
-.containerHead {
-    display: flex;  /* Activar el modelo de flexbox */
-    flex-direction: column;  /* Alinear los elementos verticalmente */
-    justify-content: center;  /* Centrar horizontalmente (por defecto) */
-    align-items: center;  /* Centrar verticalmente */
-    background-size: cover;  /* Hace que la imagen cubra todo el div */
-    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+.containerReproductor {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
-    height: 600px;
-    font-weight: normal;
+}
+
+.containerHead {
+    margin-top: 170px;
+    width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
+    text-align: center;  
+    margin-bottom: 170px;  
 }
 
 .containerChrono {
@@ -64,21 +66,45 @@ a{
     font-family: "Times New Roman", Times, serif;
 }
 
-.containerReproductor {
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
+.containerPlaneVideo {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden; /* Para asegurarse de que el video no se salga del div */
 }
 
-.containerIntroduction
-{
-    margin-top: 30px;
-    text-align: center;
+.containerPlaneVideo video{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Hace que el video cubra todo el contenedor */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Asegura que el video quede detrás del contenido */
 }
+
+.containerTopPlaneVideo {
+    margin-left: 30px;
+    position: relative;
+    z-index: 1; /* Hace que el contenido se vea encima del video */
+    text-align: left;
+}
+
+.containerDownPlaneVideo
+{
+    margin-top: 170px;
+    position: relative;
+    z-index: 1; /* Hace que el contenido se vea encima del video */
+    text-align: right;
+    margin-right: 30px;
+}
+
 
 .containerCeremonia {
     background-color: rgba(172, 171, 171, 0.5);
-    margin-top: 40px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -127,6 +153,4 @@ a{
     background-color: #000;
     border: none; /* Elimina el borde por defecto */
 }
-
-
 
