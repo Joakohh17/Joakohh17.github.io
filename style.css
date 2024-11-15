@@ -33,6 +33,7 @@ a{
 }
 
 .containerHead {
+
     height: 100vh;
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
     text-align: center;  
@@ -85,14 +86,12 @@ a{
     height: auto;
     object-fit: cover; /* Hace que el video cubra todo el contenedor */
     transform: translate(-50%, -50%);
-    z-index: -1; /* Asegura que el video quede detrás del contenido */
 }
 
 .containerTopPlaneVideo {
     margin-top: 50px;
     margin-left: 30px;
     position: relative;
-    z-index: 1; /* Hace que el contenido se vea encima del video */
     text-align: left;
 }
 
@@ -100,7 +99,6 @@ a{
 {
     margin-top: 300px;
     position: relative;
-    z-index: 1; /* Hace que el contenido se vea encima del video */
     text-align: center;
 }
 
