@@ -73,10 +73,16 @@ a{
     position: relative;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
 }
 
 .containerChrono {
     margin-top: 30px;
+    background-color: rgba(172, 171, 171, 0.5);
 }
 
 #chrono {
@@ -133,10 +139,22 @@ a{
 .containerCeremonia {
     margin-top: 5vh;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
 }
 
 .containerItinerary {
     margin-top: 5vh;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
     text-align: center;
 }
 
@@ -147,6 +165,12 @@ a{
 
 .containerDressCode {
     margin-top: 5vh;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
     text-align: center;
 }
 
