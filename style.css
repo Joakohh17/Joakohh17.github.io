@@ -9,7 +9,7 @@ h1{
 }
 
 h2{
-    font-size: clamp(3rem, 4vw, 8rem);
+    font-size: clamp(4rem, 6vw, 11rem);
 }
 
 h3{
@@ -22,12 +22,12 @@ h4{
 
 h5,h6{
     font-family: "Times New Roman", Times, serif;
-    font-size: clamp(1rem, 2vw, 5rem);
+    font-size: clamp(1.5rem, 2vw, 5rem);
 }
 
 p{
     font-family: "Times New Roman", Times, serif;
-    font-size: clamp(1rem, 1.5vw, 4rem);
+    font-size: clamp(1.25rem, 1.5vw, 4rem);
 }
 
 a{
@@ -49,9 +49,9 @@ a{
 }
 
 .containerTituloSeccion {
-    margin-top: 5vh;
+    margin-bottom: 4vh;
     width: 100%; /* Ancho completo del contenedor */
-    height: 25vh; /* Altura del div */
+    height: 30%; /* Altura del div */
     background-image: url('resources/fondoTitulo2.png'); /* Ruta de tu imagen */
     background-size: 100% 100%; /* Escala la imagen para ocupar todo el div, deformándola si es necesario */
     background-position: center; /* Centra la imagen */
@@ -72,7 +72,7 @@ a{
 .containerIntroduction {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -81,7 +81,6 @@ a{
 }
 
 .containerChrono {
-    margin-top: 30px;
     background-color: rgba(172, 171, 171, 0.5);
 }
 
@@ -115,31 +114,71 @@ a{
 }
 
 .containerTopPlaneVideo {
-    margin-top: 5vh;
+    margin-bottom: 4vh;
     width: 100%; /* Ancho completo del contenedor */
-    height: 25vh; /* Altura del div */
+    height: 30%; /* Altura del div */
     background-image: url('resources/fondoTitulo2.png'); /* Ruta de tu imagen */
     background-size: 100% 100%; /* Escala la imagen para ocupar todo el div, deformándola si es necesario */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
-    display: flex; /* Opcional: Centrar el contenido */
-    align-items: center; /* Centrar verticalmente */
-    text-align: left;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+.containerIntruductionImage
+{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+    background-image: url('resources/avionPapel.png'); /* Ruta de tu imagen */
+    background-size: contain; /* Escala la imagen para ocupar todo el div, deformándola si es necesario */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    width: 100%;
+    height: 20vh;
+}
+
+@keyframes escribir {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.imagePaperPlane
+{
+    width: 50vw;
+    height: 25vh;
+}
+
+.textoMaquinaEscribir {
+    font-family: 'Courier', monospace; /* Fuente de estilo máquina de escribir */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que aún no ha aparecido */
+    border-right: 2px solid black; /* Simula el cursor */
+    animation: escribir 5s steps(27) 1s forwards; /* Escribe el texto, 5s de duración, 30 pasos */
 }
 
 .containerDownPlaneVideo
 {
     margin-top: 5vh;
-    margin-right: 30px;
     position: relative;
     text-align: right;
 }
 
 
 .containerCeremonia {
-    margin-top: 5vh;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -148,9 +187,7 @@ a{
 }
 
 .containerItinerary {
-    margin-top: 5vh;
-    text-align: center;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -159,14 +196,11 @@ a{
 }
 
 .containerHotels {
-    margin-top: 5vh;
     text-align: center;
 }
 
 .containerDressCode {
-    margin-top: 5vh;
-    text-align: center;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -175,7 +209,6 @@ a{
 }
 
 .containerFinal{
-    margin-top: 5vh;
     height: 200px;
 }
 
