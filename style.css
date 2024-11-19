@@ -237,19 +237,28 @@ a{
 
 /* Botones de navegación */
 .navigationButton{
-    width: 20px;
+    width: auto;
+    height: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 5px;
+    padding: 0px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
 }
 
 .navigationButton img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+#buttonPrevious {
+    left: 10px;
+}
+
+#buttonNext {
+    right: 10px;
 }
 
 /* @media (min-width: 600px) {
@@ -264,10 +273,3 @@ a{
     }
 } */
 
-#buttonPrevious {
-    left: 10px;
-}
-
-#buttonNext {
-    right: 10px;
-}
