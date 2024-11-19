@@ -11,7 +11,7 @@ body {
 
 h1{
     font-family: "Abril Fatface", serif;
-    font-size: clamp(3rem, 5vw, 10rem);
+    font-size: clamp(3rem, 5vw, 4.5rem);
 }
 
 h2{
@@ -57,11 +57,8 @@ a{
 .containerTituloSeccion {
     position: relative;
     width: 100%; /* Ancho completo del contenedor */
-    height: 200px; /* Altura del div */
-    background-image: url('resources/fondoTitulo2.png'); /* Ruta de tu imagen */
-    background-size: 100% 100%; /* Escala la imagen para ocupar todo el div, deformándola si es necesario */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
+    height: 250px; /* Altura del div */
+    
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -70,18 +67,44 @@ a{
     margin-bottom: 5%;
 }
 
+.containerTituloSeccion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('resources/fondoTitulo.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;  /* Ajusta la transparencia de la imagen */
+    z-index: -1;  /* Asegura que la imagen esté detrás del contenido */
+}
+
+.containerTituloSeccion img{
+    width: 60px;
+    height: 60px;
+}
 .containerReproductor {
     position: relative;
     margin-top: 15%;
     font-family: "Times New Roman", Times, serif;
 }
 
-
-.containerIntroduction {
-    margin-top: 50px;
+.container{
+    height: 800px;
     position: relative;
     text-align: center;
-    height: auto;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.containerIntroduction {
+    height: 700px;
+    position: relative;
+    text-align: center;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -134,17 +157,6 @@ a{
     text-align: right;
 }
 
-
-.container{
-    margin-top: 50px;
-    position: relative;
-    text-align: center;
-    height: auto;
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-}
 
 #chrono {
     margin-top: 20px;
@@ -203,3 +215,57 @@ a{
 }
 
 
+.containerGallery {
+    position: relative;
+    width: 100%;
+}
+
+.containerImage {
+    width: 100%;
+}
+
+#currentImage {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Botones de navegación */
+.navigationButton{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo por defecto: mostrar los botones en pantallas grandes */
+@media (min-width: 600px) {
+    .navigationButton {
+        display: block;  /* Mostrar los botones en pantallas más grandes */
+    }
+}
+
+/* Ocultar los botones en pantallas pequeñas */
+@media (max-width: 600px) {
+    .navigationButton {
+        display: none;  /* Ocultar los botones en pantallas móviles */
+    }
+}
+
+#buttonPrevious {
+    left: 10px;
+}
+
+#buttonNext {
+    right: 10px;
+}
+
+.navigationButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
