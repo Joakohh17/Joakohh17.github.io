@@ -1,6 +1,12 @@
 body {
+    display: none;
     font-family: 'Dancing Script', cursive;
     background-color: #e1dbd6;
+    max-width: 600px; /* Máximo 500 píxeles de ancho */
+    width: 100%; /* El ancho puede ajustarse hasta 500px */
+    margin: 15px auto; /* Centra horizontalmente */
+    padding: 0 15px; /* Espacio adicional interno a los lados */
+    box-sizing: border-box;
 }
 
 h1{
@@ -38,8 +44,8 @@ a{
 }
 
 .containerHead {
-
-    height: 100vh;
+    position: relative;
+    height: 900px;
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
@@ -49,9 +55,9 @@ a{
 }
 
 .containerTituloSeccion {
-    margin-bottom: 4vh;
+    position: relative;
     width: 100%; /* Ancho completo del contenedor */
-    height: 30%; /* Altura del div */
+    height: 200px; /* Altura del div */
     background-image: url('resources/fondoTitulo2.png'); /* Ruta de tu imagen */
     background-size: 100% 100%; /* Escala la imagen para ocupar todo el div, deformándola si es necesario */
     background-position: center; /* Centra la imagen */
@@ -61,50 +67,26 @@ a{
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .containerReproductor {
-    margin-top:15vh;
+    position: relative;
+    margin-top: 15%;
     font-family: "Times New Roman", Times, serif;
 }
 
 
 .containerIntroduction {
+    margin-top: 50px;
     position: relative;
-    width: 100%;
-    height: 90vh;
+    text-align: center;
+    height: auto;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-    text-align: center;
 }
-
-.containerChrono {
-    background-color: rgba(172, 171, 171, 0.5);
-}
-
-#chrono {
-    border-collapse: separate; /* Para que el border-spacing funcione */
-    margin: 0 auto;
-}
-
-#chrono th
-{
-    text-align: center;
-    padding: 5px;
-    font-size: clamp(1.5rem, 2.5vw, 5rem);
-    font-weight: normal;
-}
-
-#chrono td
-{
-    text-align: center;
-    padding: 5px;
-    font-size: clamp(1rem, 1.5vw, 4rem);
-    font-family: "Times New Roman", Times, serif;
-}
-
 
 .containerIntroduction video{
     position: relative;
@@ -113,25 +95,9 @@ a{
     height: auto;
 }
 
-.containerTopPlaneVideo {
-    margin-bottom: 4vh;
-    width: 100%; /* Ancho completo del contenedor */
-    height: 30%; /* Altura del div */
-    background-image: url('resources/fondoTitulo2.png'); /* Ruta de tu imagen */
-    background-size: 100% 100%; /* Escala la imagen para ocupar todo el div, deformándola si es necesario */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    text-align: center;
-}
-
 .containerIntruductionImage
 {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -142,7 +108,7 @@ a{
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
     width: 100%;
-    height: 20vh;
+    height: auto;
 }
 
 @keyframes escribir {
@@ -152,12 +118,6 @@ a{
     100% {
         width: 100%;
     }
-}
-
-.imagePaperPlane
-{
-    width: 50vw;
-    height: 25vh;
 }
 
 .textoMaquinaEscribir {
@@ -170,45 +130,51 @@ a{
 
 .containerDownPlaneVideo
 {
-    margin-top: 5vh;
     position: relative;
     text-align: right;
 }
 
 
-.containerCeremonia {
+.container{
+    margin-top: 50px;
+    position: relative;
     text-align: center;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-    text-align: center;
 }
 
-.containerItinerary {
-    height: 90vh;
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    text-align: center;
+#chrono {
+    margin-top: 20px;
+    border-collapse: collapse;
 }
 
-.containerHotels {
+#chrono th{
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: center;
+    vertical-align: middle;
+    font-size: clamp(1.2rem, 2vw, 4rem);
 }
 
-.containerDressCode {
-    height: 90vh;
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+#chrono td
+{
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: center;
+    vertical-align: middle;
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(1.0rem, 2vw, 4rem);
+}
+
+.tableRight{
+    border-right: 1px solid;
 }
 
 .containerFinal{
+    margin-top: 20%;
     height: 200px;
 }
 
@@ -235,4 +201,5 @@ a{
     background-color: #000;
     border: none; /* Elimina el borde por defecto */
 }
+
 
