@@ -220,43 +220,49 @@ a{
     width: 100%;
 }
 
-.containerImage {
-    width: 100%;
+.containerPhoto {
+    display: flex;
+    overflow-x: auto;  /* Habilita el desplazamiento horizontal */
+    scroll-snap-type: x mandatory;  /* Asegura que las imágenes se alineen al hacer scroll */
+    width: 100%;  /* Ajusta el ancho según sea necesario */
 }
 
-#currentImage {
+.containerPhoto img {
     width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 400px;
-    object-fit: contain;
+    object-fit: cover;  /* Esto asegura que las imágenes mantengan su proporción */
+    scroll-snap-align: center;  /* Asegura que las imágenes se alineen */
 }
 
 /* Botones de navegación */
 .navigationButton{
+    width: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
 }
 
-/* Estilo por defecto: mostrar los botones en pantallas grandes */
-@media (min-width: 600px) {
+.navigationButton img{
+    width: 20px;
+    height: 20px;
+}
+
+/* @media (min-width: 600px) {
     .navigationButton {
-        display: block;  /* Mostrar los botones en pantallas más grandes */
+        display: block;
     }
 }
 
-/* Ocultar los botones en pantallas pequeñas */
 @media (max-width: 600px) {
     .navigationButton {
-        display: none;  /* Ocultar los botones en pantallas móviles */
+        display: none;
     }
-}
+} */
 
 #buttonPrevious {
     left: 10px;
@@ -264,8 +270,4 @@ a{
 
 #buttonNext {
     right: 10px;
-}
-
-.navigationButton:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }

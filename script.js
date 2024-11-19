@@ -27,3 +27,8 @@ const intervalo = setInterval(function() {
         document.getElementById("contador").innerHTML = "¡La fecha ha llegado!";
     }
 }, 1000);
+
+
+function abrirFormularioAsistencia() {
+    window.open("formularioAsistencia.html", "Popup", "width=400,height=300");
+}
