@@ -11,6 +11,9 @@ const containergallery= document.getElementById('containerGallery');
 
 // Función para mostrar la imagen según el índice
 function showImage(index) {
+    currentImage.classList.add("fade-out");
+
+    setTimeout(() => {
     if (index < 1) {
         index = numberImages; // Si estamos en la primera, va a la última imagen
     } else if (index > numberImages) {
@@ -18,6 +21,11 @@ function showImage(index) {
     }
     currentImage.src = path + 'photo' + index + '.jpg';
     currentIndex = index;
+    currentImage.classList.remove("fade-out");
+    currentImage.classList.add("fade-in");
+
+    setTimeout(() => currentImage.classList.remove("fade-in"), 500);
+    }, 500);
 }
 
 // Manejo del botón de "Anterior"
