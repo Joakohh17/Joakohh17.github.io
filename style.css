@@ -235,6 +235,7 @@ a{
     overflow-x: auto;  /* Habilita el desplazamiento horizontal */
     scroll-snap-type: x mandatory;  /* Asegura que las imágenes se alineen al hacer scroll */
     width: 100%;  /* Ajusta el ancho según sea necesario */
+    height: 300px;
 }
 
 .containerPhoto img {
@@ -242,7 +243,6 @@ a{
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    scroll-snap-align: center;
     transition: transform 0.5s ease, opacity 0.5s ease; /* Suaviza el cambio */
 }
 
