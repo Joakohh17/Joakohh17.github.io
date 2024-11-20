@@ -9,7 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Enlace a tu archivo CSS personalizado -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/containers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -146,9 +147,58 @@
     </div>
 
     <div class="container">
-        <button onclick="abrirFormularioAsistencia()">Abrir Formulario</button>
+        <div class ="containerTituloSeccion">
+            <img src="resources/photo.png">
+            <h2>Fotos</h2>
+        </div>
+        <div class="containerText">
+            <h5>El día de la boda toma muchas fotos y déjanos un bonito y divertido recuerdo haciendo clic en el icono
+                de la cámara de fotos</h5>
+        </div>
+        <a href="https://www.google.es"><img src="resources/camara.png"></a>
+    </div>
+    
+    <div class="container">
+        <div class="containerTituloSeccion">
+            <img src="resources/gallery.png">
+            <h2>Asistencia</h2>
+        </div>
+        <div class="containerText">
+            <h5>Nos encantaría contar contigo en esta aventura y para ello necesitamos que nos confirmes tu asistencia y
+                algunos datos para que el viaje sea increible. Pulsa en la imagen del pasaporte para confirmarnos tu presencia</h5>
+        </div>
+        <button onclick="abrirModal()">Abrir Ventana</button>
+        
+        <div id="modalIdFormulary" class="modalFormulary">
+            <button class="buttonClose" onclick="cerrarModal()"><img src="resources/close.png"></button>
+            <div class="containerFormulary">
+                    <br>
+                    <h3>Formulario de Contacto</h3><br>
+                    <form action="#" method="post">
+                    <label>¿Contamos contigo?</label>
+                    <div class="containerHorizontal">
+                        <label for="radioYes">Si:</label>
+                        <input type="radio" id="radioYes" name="respuesta" value="yes" required>
+                        <label for="radioNo">No:</label>
+                        <input type="radio" id="radioNo" name="respuesta" value="no">
+                    </div>
+                    <br>
+                    <label for="name">Nombres:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="allergies">Alergias o intoleracias:</label>
+                    <input type="text" id="allergies" name="allergies" required><br><br>
+
+                    <label for="message">Algo que quieras decirnos:</label>
+                    <textarea id="message" name="message" rows="2" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+            </div>
+        </div>
     </div>
 
+
+    <!-- <button onclick="abrirFormularioAsistencia()">Abrir Formulario</button> -->
     <div class="containerFinal">
     </div>
     
@@ -156,8 +206,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Enlace a tu archivo JavaScript personalizado -->
-    <script src="script.js"></script>
-    <script src="load.js"></script>
-    <script src="gallery.js"></script>
+    <script src="functionality/script.js"></script>
+    <script src="functionality/load.js"></script>
+    <script src="functionality/gallery.js"></script>
 </body>
 </html>

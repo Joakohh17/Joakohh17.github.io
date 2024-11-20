@@ -1,0 +1,179 @@
+body {
+    display: none;
+    font-family: 'Dancing Script', cursive;
+    background-color: #e1dbd6;
+    max-width: 600px; /* Máximo 500 píxeles de ancho */
+    width: 100%; /* El ancho puede ajustarse hasta 500px */
+    margin: 25px auto; /* Centra horizontalmente */
+    padding: 25px 25px; /* Espacio adicional interno a los lados */
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Abril Fatface", serif;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+}
+
+h2{
+    font-size: clamp(4rem, 6vw, 11rem);
+}
+
+h3{
+    font-size: clamp(2.5rem, 3vw, 6rem);
+}
+
+h4{
+    font-size: clamp(1.5rem, 2vw, 5rem);
+}
+
+h5,h6{
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(1.5rem, 2vw, 5rem);
+}
+
+p, label{
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(1rem, 1.2vw, 3rem);
+}
+
+a{
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #000;
+}
+
+@keyframes escribir {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.textoMaquinaEscribir {
+    font-family: 'Courier', monospace; /* Fuente de estilo máquina de escribir */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que aún no ha aparecido */
+    border-right: 2px solid black; /* Simula el cursor */
+    animation: escribir 5s steps(27) 1s forwards; /* Escribe el texto, 5s de duración, 30 pasos */
+}
+
+
+#chrono {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#chrono th{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: clamp(1.2rem, 2vw, 4rem);
+}
+
+#chrono td
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(1.0rem, 2vw, 4rem);
+}
+
+.tableRight{
+    border-right: 1px solid;
+}
+
+.linePersonalized {
+    border: 0; /* Elimina el borde predeterminado */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    width: 50%; /* Ancho de la línea (puedes ajustarlo) */
+    margin: 20px auto; /* Márgenes para separar la línea de otros elementos */
+}
+
+.lineUbication {
+    width: 20%; /* Ajusta el ancho de la línea */
+    margin: 0 auto; /* Centra la línea horizontal */
+    height: 2px; /* Establece el grosor de la línea */
+    background-color: #000;
+    border: none; /* Elimina el borde por defecto */
+}
+
+.lineUbicationBold {
+    width: 20%; /* Ajusta el ancho de la línea */
+    margin: 0 auto; /* Centra la línea horizontal */
+    height: 5px; /* Establece el grosor de la línea */
+    background-color: #000;
+    border: none; /* Elimina el borde por defecto */
+}
+
+
+/* Botones de navegación */
+.navigationButton{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.navigationButton img{
+    width: 30px;
+    height: 30px;
+}
+
+#buttonPrevious {
+    left: 10px;
+}
+
+#buttonNext {
+    right: 10px;
+}
+
+
+.modalFormulary {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+/* Botón de cerrar */
+.buttonClose {
+    border: none;            /* Sin bordes */
+    padding: 0;              /* Sin relleno */
+    margin: 0;               /* Sin margen */
+    background: none;
+    display: inline-block;   /* Asegura que ocupe solo el espacio necesario */
+    cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
+    height: 40px;
+    width: 40px;
+    margin-left: 85%;
+}
+
+.buttonClose img{
+    width: 100%;             /* La imagen ocupa todo el botón */
+    height: 100%;            /* Mantiene proporciones */
+    display: block;          /* Elimina espacios alrededor de la imagen */
+}
+
+.containerFormulary input,textarea{
+    width: 100%;
+}
+

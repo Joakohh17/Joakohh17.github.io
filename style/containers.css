@@ -1,0 +1,176 @@
+.containerHead {
+    position: relative;
+    height: 900px;
+    width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+.containerTituloSeccion {
+    position: relative;
+    width: 100%; /* Ancho completo del contenedor */
+    height: 250px; /* Altura del div */
+    
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.containerTituloSeccion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../resources/fondoTitulo.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;  /* Ajusta la transparencia de la imagen */
+    z-index: -1;  /* Asegura que la imagen esté detrás del contenido */
+}
+
+.containerTituloSeccion img{
+    width: 60px;
+    height: 60px;
+}
+.containerReproductor {
+    position: relative;
+    margin-top: 15%;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+.container{
+    height: 800px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.containerBig{
+    height: auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.containerIntroduction {
+    height: 700px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.containerIntroduction video{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.containerIntruductionImage
+{
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+    background-image: url('../resources/avionPapel.png'); /* Ruta de tu imagen */
+    background-size: contain; /* Escala la imagen para ocupar todo el div, deformándola si es necesario */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    width: 100%;
+    height: auto;
+}
+
+.containerDownPlaneVideo
+{
+    position: relative;
+    text-align: right;
+}
+
+.containerFinal{
+    margin-top: 20%;
+    height: 200px;
+}
+
+.containerGallery {
+    position: relative;
+    width: 100%;
+}
+
+.containerPhoto {
+    display: flex;
+    overflow-x: auto;  /* Habilita el desplazamiento horizontal */
+    scroll-snap-type: x mandatory;  /* Asegura que las imágenes se alineen al hacer scroll */
+    width: 100%;  /* Ajusta el ancho según sea necesario */
+    height: 300px;
+}
+
+.containerPhoto img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Suaviza el cambio */
+}
+
+.containerPhoto img.fade-out {
+    opacity: 0;           /* Imagen desaparece */
+    transform: scale(0.8); /* Se reduce ligeramente */
+}
+
+.containerPhoto img.fade-in {
+    opacity: 1;           /* Imagen aparece */
+    transform: scale(1);  /* Recupera el tamaño normal */
+}
+
+.containerText{
+    width: 60%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.containerIframe{
+    width: 100%;
+    height: auto;
+}
+
+/* Contenido del modal */
+.containerFormulary{
+    overflow: auto;
+    background-color: #e1dbd6;
+    width: 90%;
+    height:500px;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    justify-content: left; /* Centrar verticalmente */
+    text-align: left;
+    margin: 25px 25px; /* Centra horizontalmente */
+    padding: 25px 25px; /* Espacio arriba y abajo */
+}
+.containerHorizontal{
+    display: flex;
+    flex-direction: row; /* Para apilar texto verticalmente */
+    justify-content: left; /* Centrar verticalmente */
+    text-align: left;
+    width: 50%;
+    height: auto;
+}
