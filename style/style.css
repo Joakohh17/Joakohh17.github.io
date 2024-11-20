@@ -114,16 +114,16 @@ a{
 
 
 /* Botones de navegación */
-.navigationButton{
+button{
     width: auto;
     height: auto;
-    position: absolute;
-    top: 50%;
+    position: relative;
     transform: translateY(-50%);
     padding: 0px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .navigationButton img{
@@ -148,10 +148,9 @@ a{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
-    justify-content: center; /* Centrar verticalmente */
-    text-align: center;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
 /* Botón de cerrar */
@@ -173,7 +172,4 @@ a{
     display: block;          /* Elimina espacios alrededor de la imagen */
 }
 
-.containerFormulary input,textarea{
-    width: 100%;
-}
 

@@ -155,16 +155,15 @@
 
 /* Contenido del modal */
 .containerFormulary{
-    overflow: auto;
     background-color: #e1dbd6;
-    width: 90%;
-    height:500px;
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    justify-content: left; /* Centrar verticalmente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 85%; /* Ajusta al tamaño que desees */
+    height: auto; /* Ajusta al tamaño que desees */
+    max-height: 90%; /* Máximo tamaño para pantallas pequeñas */
+    overflow: auto; /* Habilita scroll */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
-    margin: 25px 25px; /* Centra horizontalmente */
-    padding: 25px 25px; /* Espacio arriba y abajo */
 }
 .containerHorizontal{
     display: flex;
@@ -173,4 +172,14 @@
     text-align: left;
     width: 50%;
     height: auto;
+}
+
+.containerHorizontal label{
+    font-size: clamp(0.9rem, 1.2vw, 2.5rem);
+}
+
+.containerFormulary input,textarea{
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(0.9rem, 1.2vw, 2.5rem);
 }

@@ -167,13 +167,13 @@
             <h5>Nos encantaría contar contigo en esta aventura y para ello necesitamos que nos confirmes tu asistencia y
                 algunos datos para que el viaje sea increible. Pulsa en la imagen del pasaporte para confirmarnos tu presencia</h5>
         </div>
-        <button onclick="abrirModal()">Abrir Ventana</button>
+        <button onclick="abrirModal()"><img src="resources/passport.png"></button>
         
         <div id="modalIdFormulary" class="modalFormulary">
-            <button class="buttonClose" onclick="cerrarModal()"><img src="resources/close.png"></button>
             <div class="containerFormulary">
+                    <button class="buttonClose" onclick="cerrarModal()"><img src="resources/close.png"></button>
                     <br>
-                    <h3>Formulario de Contacto</h3><br>
+                    <h3 style="text-align: center;">Formulario de Asistencia</h3><br>
                     <form action="#" method="post">
                     <label>¿Contamos contigo?</label>
                     <div class="containerHorizontal">
@@ -187,12 +187,12 @@
                     <input type="text" id="name" name="name" required><br><br>
 
                     <label for="allergies">Alergias o intoleracias:</label>
-                    <input type="text" id="allergies" name="allergies" required><br><br>
+                    <input type="text" id="allergies" name="allergies"><br><br>
 
                     <label for="message">Algo que quieras decirnos:</label>
-                    <textarea id="message" name="message" rows="2" required></textarea><br><br>
+                    <textarea id="message" name="message" rows="2"></textarea><br><br>
 
-                    <input type="submit" value="Enviar">
+                    <button onclick=""><img src="resources/enviar.png"></button>
             </div>
         </div>
     </div>
