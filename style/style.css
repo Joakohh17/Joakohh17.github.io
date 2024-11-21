@@ -2,7 +2,7 @@ body {
     display: none;
     font-family: 'Dancing Script', cursive;
     background-color: #e1dbd6;
-    max-width: 600px; /* Máximo 500 píxeles de ancho */
+    max-width: 700px; /* Máximo 500 píxeles de ancho */
     width: 100%; /* El ancho puede ajustarse hasta 500px */
     margin: 25px auto; /* Centra horizontalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
@@ -114,16 +114,16 @@ a{
 
 
 /* Botones de navegación */
-button{
+.navigationButton{
     width: auto;
     height: auto;
-    position: relative;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
     padding: 0px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .navigationButton img{
@@ -139,6 +139,16 @@ button{
     right: 10px;
 }
 
+.buttonStyle{
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 .modalFormulary {
     display: none; /* Oculto por defecto */
@@ -159,17 +169,13 @@ button{
     padding: 0;              /* Sin relleno */
     margin: 0;               /* Sin margen */
     background: none;
-    display: inline-block;   /* Asegura que ocupe solo el espacio necesario */
-    cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
-    height: 40px;
-    width: 40px;
-    margin-left: 85%;
+    height: 45px;
+    width: 45px;
 }
 
 .buttonClose img{
     width: 100%;             /* La imagen ocupa todo el botón */
     height: 100%;            /* Mantiene proporciones */
-    display: block;          /* Elimina espacios alrededor de la imagen */
 }
 
 

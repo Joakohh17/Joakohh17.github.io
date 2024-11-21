@@ -19,7 +19,6 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     text-align: center;
-    margin-bottom: 5%;
 }
 
 .containerTituloSeccion::before {
@@ -30,8 +29,9 @@
     right: 0;
     bottom: 0;
     background-image: url('../resources/fondoTitulo.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat; /* Evita que se repita */
     opacity: 0.5;  /* Ajusta la transparencia de la imagen */
     z-index: -1;  /* Asegura que la imagen esté detrás del contenido */
 }
@@ -67,6 +67,13 @@
     justify-content: center; /* Centrar verticalmente */
 }
 
+.containerContentSection{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
 .containerIntroduction {
     height: 700px;
     position: relative;
@@ -155,31 +162,42 @@
 
 /* Contenido del modal */
 .containerFormulary{
+    overflow: auto; /* Habilita scroll */
     background-color: #e1dbd6;
     padding: 20px;
     border-radius: 10px;
     width: 85%; /* Ajusta al tamaño que desees */
+    max-width: 700px;
     height: auto; /* Ajusta al tamaño que desees */
-    max-height: 90%; /* Máximo tamaño para pantallas pequeñas */
-    overflow: auto; /* Habilita scroll */
+    max-height: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: left; /* Centrar horizontalmente */
+    justify-content: left; /* Centrar verticalmente */
     text-align: left;
 }
 .containerHorizontal{
     display: flex;
     flex-direction: row; /* Para apilar texto verticalmente */
-    justify-content: left; /* Centrar verticalmente */
+    justify-content: flex-start; /* Centrar verticalmente */
     text-align: left;
-    width: 50%;
-    height: auto;
+    width: fit-content;
 }
 
 .containerHorizontal label{
-    font-size: clamp(0.9rem, 1.2vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.4vw, 2.5rem);
 }
 
 .containerFormulary input,textarea{
     width: 100%;
     font-family: "Times New Roman", Times, serif;
-    font-size: clamp(0.9rem, 1.2vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.4vw, 2.5rem);
+}
+
+.containerAlignRight
+{
+    display: flex;
+    justify-content: flex-end; /* Centrar verticalmente */
+    width: 100%;
 }
