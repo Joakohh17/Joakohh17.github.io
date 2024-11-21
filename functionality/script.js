@@ -35,5 +35,9 @@ function abrirModal() {
 
 // Función para cerrar el modal
 function cerrarModal() {
+
     document.getElementById('modalIdFormulary').style.display = 'none';
+    document.getElementById('name').value = "";
+    document.getElementById('allergies').value = "";
+    document.getElementById('message').value = "";
 }

@@ -2,7 +2,7 @@ emailjs.init('nJbXVmO-q9nEj45z8');
 
 
 function sendEmail() {
-    //const radios = document.getElementsByName("response");
+    const radios = document.getElementsByName("response");
     const name = document.getElementById('name').value;
     const allergies = document.getElementById('allergies').value;
     const message = document.getElementById('message').value;
@@ -12,31 +12,29 @@ function sendEmail() {
     var attendDecission = false;
     var quest = false;
 
-    // // for (let i = 0; i < radios.length; i++) {
-    // //     if (radios[i].checked) {
-    // //         // if (radios[i].value === "yes")
-    // //         // {
-    // //         //     attendDecission = true;
-    // //         // }
-    // //         // else if (radios[i].value === "no")
-    // //         // {
-    // //         //     attendDecission = false;
-    // //         // }
-    // //         // else
-    // //         // {
-    // //         //     quest = true;
-    // //         // }
-    // //         // completedAssistance = true;
-    // //         alert(radios[i].value);
-    // //     }
-    // // }
-    //alert("Enviando mensaje2");
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            if (radios[i].value === "yes")
+            {
+                attendDecission = true;
+            }
+            else if (radios[i].value === "no")
+            {
+                attendDecission = false;
+            }
+            else
+            {
+                quest = true;
+            }
+            completedAssistance = true;
+        }
+    }
 
 
     if (name.trim() !== "" && allergies.trim() !== "" /*&& completedAssistance === true*/) {
 
-        attend = "borrar";
-        /*if (attendDecission === true)
+        attend = "";
+        if (attendDecission === true)
         {
             attend = "Confirmado";
         }
@@ -46,7 +44,7 @@ function sendEmail() {
 
         if (quest){
             attend = "Preguntarle"
-        }*/
+        }
 
         emailjs.send("service_h2dnmxe", "template_909oeah", {
             name, allergies, message, attend,
