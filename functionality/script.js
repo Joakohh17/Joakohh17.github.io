@@ -27,17 +27,3 @@ const intervalo = setInterval(function() {
         document.getElementById("contador").innerHTML = "¡La fecha ha llegado!";
     }
 }, 1000);
-
-
-function abrirModal() {
-    document.getElementById('modalIdFormulary').style.display = 'flex';
-}
-
-// Función para cerrar el modal
-function cerrarModal() {
-
-    document.getElementById('modalIdFormulary').style.display = 'none';
-    document.getElementById('name').value = "";
-    document.getElementById('allergies').value = "";
-    document.getElementById('message').value = "";
-}

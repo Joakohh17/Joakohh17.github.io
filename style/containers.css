@@ -162,21 +162,18 @@
 
 /* Contenido del modal */
 .containerFormulary{
+    text-align: left;
     overflow: auto; /* Habilita scroll */
     background-color: #e1dbd6;
     padding: 20px;
     border-radius: 10px;
+    height: auto;
+    max-height: 90%;
     width: 85%; /* Ajusta al tamaño que desees */
     max-width: 700px;
-    height: auto; /* Ajusta al tamaño que desees */
-    max-height: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    align-items: left; /* Centrar horizontalmente */
-    justify-content: left; /* Centrar verticalmente */
-    text-align: left;
 }
+
 .containerHorizontal{
     display: flex;
     flex-direction: row; /* Para apilar texto verticalmente */
@@ -189,8 +186,9 @@
     font-size: clamp(1.2rem, 1.4vw, 2.5rem);
 }
 
-.containerFormulary input,textarea{
+.containerFormulary input, textarea{
     width: 100%;
+    height: auto;
     font-family: "Times New Roman", Times, serif;
     font-size: clamp(1.2rem, 1.4vw, 2.5rem);
 }

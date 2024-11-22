@@ -195,26 +195,25 @@
                 </div>
                 <br>
                 <h3 style="text-align: center;">Formulario de Asistencia</h3><br>
-                <label>¿Contamos contigo?</label>
+                <label>¿Contamos contigo?(*)</label>
                 <div class="containerHorizontal">
                     <label for="radioYes">Si:</label>
-                    <input type="radio" name="response" value="yes">
+                    <input type="radio" name="response" value="yes" required>
                     <label for="radioNo">&nbsp;&nbsp;&nbsp;No:</label>
                     <input type="radio" name="response" value="no">
                 </div>
                 <br>
-                <label for="name">Nombres:</label>
+                <label for="name">Nombres(*):</label>
                 <input type="text" id="name" name="name" required><br><br>
 
-                <label for="allergies">Alergias o intoleracias:</label>
-                <input type="text" id="allergies" name="allergies"><br><br>
+                <label for="allergies">Alergias o intoleracias(*):</label>
+                <input type="text" id="allergies" name="allergies" required><br><br>
 
                 <label for="message">Algo que quieras decirnos:</label>
-                <textarea id="message" name="message" rows="2"></textarea><br><br>
+                <textarea id="message" name="message" rows="4"></textarea><br><br>
                 <div class="containerContentSection">
-                    <button class="buttonStyle" onclick="sendEmail()"><img src="resources/enviar.png"></button>
+                    <button type="submit" class="buttonStyle" onclick="sendEmail()"><img id="imageSendButton" src="resources/enviar.png"></button>
                 </div>
-                <br>
             </div>
         </div>
     </div>

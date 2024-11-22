@@ -2,11 +2,11 @@ emailjs.init('nJbXVmO-q9nEj45z8');
 
 
 function sendEmail() {
+
     const radios = document.getElementsByName("response");
     const name = document.getElementById('name').value;
     const allergies = document.getElementById('allergies').value;
     const message = document.getElementById('message').value;
-
 
     var completedAssistance = false;
     var attendDecission = false;
@@ -14,35 +14,33 @@ function sendEmail() {
 
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
-            if (radios[i].value === "yes")
-            {
+            if (radios[i].value === "yes") {
                 attendDecission = true;
             }
-            else if (radios[i].value === "no")
-            {
+            else if (radios[i].value === "no") {
                 attendDecission = false;
             }
-            else
-            {
+            else {
                 quest = true;
             }
             completedAssistance = true;
         }
     }
 
+    if (name.trim() !== "" && allergies.trim() !== "" && completedAssistance === true) {
 
-    if (name.trim() !== "" && allergies.trim() !== "" /*&& completedAssistance === true*/) {
+        const srcImageButtonOriginal = document.getElementById("imageSendButton").src;
+        document.getElementById("imageSendButton").src = "resources/loading.gif";
 
         attend = "";
-        if (attendDecission === true)
-        {
+        if (attendDecission === true) {
             attend = "Confirmado";
         }
-        else{
+        else {
             attend = "Rechazado";
         }
 
-        if (quest){
+        if (quest) {
             attend = "Preguntarle"
         }
 
@@ -50,7 +48,9 @@ function sendEmail() {
             name, allergies, message, attend,
         })
             .then(function (response) {
+                document.getElementById("imageSendButton").src = srcImageButtonOriginal;
                 console.log("Correo enviado con éxito:", response);
+                cerrarModal();
                 alert("¡Correo enviado exitosamente!");
             })
             .catch(function (error) {
@@ -58,8 +58,22 @@ function sendEmail() {
                 alert("Error al enviar el correo.");
             });
     }
-    else{
-        console.log("Los campos obligatiorios no estar rellenos");
+    else {
+        alert("Los campos obligatiorios no estan rellenos");
     }
+}
 
+
+
+function abrirModal() {
+    document.getElementById('modalIdFormulary').style.display = 'flex';
+}
+
+// Función para cerrar el modal
+function cerrarModal() {
+
+    document.getElementById('modalIdFormulary').style.display = 'none';
+    document.getElementById('name').value = "";
+    document.getElementById('allergies').value = "";
+    document.getElementById('message').value = "";
 }
