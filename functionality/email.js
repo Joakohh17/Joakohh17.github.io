@@ -30,7 +30,7 @@ function sendEmail() {
     if (name.trim() !== "" && allergies.trim() !== "" && completedAssistance === true) {
 
         const srcImageButtonOriginal = document.getElementById("imageSendButton").src;
-        document.getElementById("imageSendButton").src = "resources/loading.gif";
+        document.getElementById("imageSendButton").src = "resources/brujula.gif";
 
         attend = "";
         if (attendDecission === true) {

@@ -11,29 +11,29 @@ body {
 
 h1{
     font-family: "Abril Fatface", serif;
-    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-size: clamp(3rem, 5vw, 4rem);
 }
 
 h2{
-    font-size: clamp(4rem, 6vw, 11rem);
+    font-size: clamp(4rem, 6vw, 5rem);
 }
 
 h3{
-    font-size: clamp(2.5rem, 3vw, 6rem);
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
 }
 
 h4{
-    font-size: clamp(1.5rem, 2vw, 5rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 h5, h6{
     font-family: "Times New Roman", Times, serif;
-    font-size: clamp(1.5rem, 2vw, 5rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 p, label{
     font-family: "Times New Roman", Times, serif;
-    font-size: clamp(1rem, 1.2vw, 3rem);
+    font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
 a{
@@ -75,7 +75,7 @@ a{
     padding-left: 15px;
     text-align: center;
     vertical-align: middle;
-    font-size: clamp(1.2rem, 2vw, 4rem);
+    font-size: clamp(1.2rem, 2vw, 2.2rem);
 }
 
 #chrono td
@@ -85,7 +85,7 @@ a{
     text-align: center;
     vertical-align: middle;
     font-family: "Times New Roman", Times, serif;
-    font-size: clamp(1.0rem, 2vw, 4rem);
+    font-size: clamp(1.0rem, 2vw, 2.0rem);
 }
 
 .tableRight{
