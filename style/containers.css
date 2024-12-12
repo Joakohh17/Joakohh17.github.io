@@ -89,19 +89,17 @@
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-    margin: 25px auto; /* Centra horizontalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
 }
 
 .containerBig{
-    height: 80vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-    margin: 25px auto; /* Centra horizontalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
 }
 
@@ -121,7 +119,6 @@
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-    margin: 25px auto; /* Centra horizontalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
 }
 
