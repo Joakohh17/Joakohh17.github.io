@@ -12,35 +12,41 @@ body {
 h1{
     font-family: "Abril Fatface", serif;
     font-size: clamp(3rem, 5vw, 4rem);
+    color: #545454;
 }
 
 h2{
     font-size: clamp(4rem, 6vw, 5rem);
+    color: #545454;
 }
 
 h3{
     font-size: clamp(2.5rem, 3vw, 3.5rem);
+    color: #545454;
 }
 
 h4{
     font-size: clamp(1.5rem, 2vw, 2.5rem);
+    color: #545454;
 }
 
 h5, h6{
     font-family: "Times New Roman", Times, serif;
     font-size: clamp(1.2rem, 2vw, 2.2rem);
+    color: #545454;
 }
 
 p, label{
     font-family: "Times New Roman", Times, serif;
     font-size: clamp(1rem, 1.2vw, 2rem);
+    color: #545454;
 }
 
 a{
     text-decoration: none;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    color: #000;
+    color: #545454;
     background-color: rgba(0, 0, 0, 0.1);
     border: 1px solid black;
     border-radius: 10px;
