@@ -53,6 +53,10 @@ a{
     cursor: pointer;
 }
 
+input, textarea{
+    background-color: #d9d9d9;
+}
+
 @keyframes escribir {
     0% {
         width: 0;
@@ -212,7 +216,7 @@ a{
 }
 
 .imgIntroduccion{
-    max-width: 100%; /* Escala la imagen para no superar el ancho del contenedor */
-    max-height: 100%; /* Escala la imagen para no superar la altura del contenedor */
+    width: 100%; /* Escala la imagen para no superar el ancho del contenedor */
+    height: auto; /* Escala la imagen para no superar la altura del contenedor */
     object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
 }

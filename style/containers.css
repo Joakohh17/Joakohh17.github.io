@@ -240,3 +240,30 @@
     justify-content: flex-end; /* Centrar verticalmente */
     width: 100%;
 }
+
+.containerTituloSeccionModal
+{
+    position: relative;
+    width: 100%; /* Ancho completo del contenedor */
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+    z-index: 1000;
+}
+
+.containerTituloSeccionModal::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../resources/fondoTitulo.png');
+    background-size: cover; /* Ajusta el tamaño */
+    background-position: center; /* Centra la imagen */
+    opacity: 0.5; /* Ajusta la transparencia */
+    z-index: -1;
+}
