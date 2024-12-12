@@ -2,10 +2,10 @@ body {
     display: none;
     font-family: 'Dancing Script', cursive;
     background-color: #e1dbd6;
-    max-width: 700px; /* Máximo 500 píxeles de ancho */
+    max-width: 1000px; /* Máximo 500 píxeles de ancho */
     width: 100%; /* El ancho puede ajustarse hasta 500px */
-    margin: 25px auto; /* Centra horizontalmente */
-    padding: 25px 25px; /* Espacio adicional interno a los lados */
+    margin: 0px auto; /* Centra horizontalmente */
+    padding: 0px 0px; /* Espacio adicional interno a los lados */
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ h4{
 
 h5, h6{
     font-family: "Times New Roman", Times, serif;
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(1.2rem, 2vw, 2.2rem);
 }
 
 p, label{
@@ -187,4 +187,20 @@ a{
     height: 100%;            /* Mantiene proporciones */
 }
 
+.imgBrujula {
+    height: 100px;
+    width: 100px;
+    ;
+}
 
+.imgLogo {
+    max-width: 100%; /* Escala la imagen para no superar el ancho del contenedor */
+    max-height: 100%; /* Escala la imagen para no superar la altura del contenedor */
+    object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
+}
+
+.imgInvitacion{
+    max-width: 100%; /* Escala la imagen para no superar el ancho del contenedor */
+    max-height: 110%; /* Escala la imagen para no superar la altura del contenedor */
+    object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
+}

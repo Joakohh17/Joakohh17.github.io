@@ -1,12 +1,16 @@
 .containerHead {
     position: relative;
-    height: 900px;
+    height: 100vh;
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     text-align: center;
+    background-image: url('../resources/fondoPasaporte.png');
+    background-size: 110% 90%; /* Ajusta la imagen para que cubra todo el div */
+    background-position: top; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .containerTituloSeccion {
@@ -40,31 +44,65 @@
     width: 60px;
     height: 60px;
 }
-.containerReproductor {
+
+
+.containerLogoAnimado {
     position: relative;
-    margin-top: 15%;
+    width: 100%; /* Ancho completo del contenedor */
+    height: 250px; /* Altura del div */
+    
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+.containerLogoAnimado::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../resources/fondoTitulo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que se repita */
+    opacity: 0.5;  /* Ajusta la transparencia de la imagen */
+    z-index: -1;  /* Asegura que la imagen esté detrás del contenido */
+}
+
+.containerReproductor {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
     font-family: "Times New Roman", Times, serif;
     
 }
 
 .container{
-    height: 800px;
+    height: 80vh;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
+    margin: 25px auto; /* Centra horizontalmente */
+    padding: 25px 25px; /* Espacio adicional interno a los lados */
 }
 
 .containerBig{
-    height: auto;
+    height: 80vh;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
+    margin: 25px auto; /* Centra horizontalmente */
+    padding: 25px 25px; /* Espacio adicional interno a los lados */
 }
 
 .containerContentSection{
@@ -73,15 +111,18 @@
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
+
 }
 .containerIntroduction {
-    height: 700px;
+    height: 100vh;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
+    margin: 25px auto; /* Centra horizontalmente */
+    padding: 25px 25px; /* Espacio adicional interno a los lados */
 }
 
 .containerIntroduction video{
@@ -90,6 +131,7 @@
     width: 100%;
     height: auto;
 }
+
 
 .containerIntruductionImage
 {
@@ -133,7 +175,6 @@
 
 .containerPhoto img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     object-fit: cover;
     transition: transform 0.5s ease, opacity 0.5s ease; /* Suaviza el cambio */
