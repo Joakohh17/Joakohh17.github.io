@@ -7,8 +7,8 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     text-align: center;
-    background-image: url('../resources/fondoPasaporte.png');
-    background-size: 115% 90%; /* Ajusta la imagen para que cubra todo el div */
+    background-image: url('../resources/fondoPasaporte4.png');
+    background-size: 125% 90%; /* Ajusta la imagen para que cubra todo el div */
     background-position: top; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
@@ -90,6 +90,18 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
+}
+
+.containerWithoutPadding{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    padding: 0px 10px; /* Espacio adicional interno a los lados */
 }
 
 .containerBig{
