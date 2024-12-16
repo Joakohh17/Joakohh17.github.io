@@ -200,7 +200,7 @@ input, textarea{
 .imgBrujula {
     height: 100px;
     width: 100px;
-    ;
+    
 }
 
 .imgLogo {
@@ -210,21 +210,30 @@ input, textarea{
 }
 
 .imgInvitacion{
-    max-width: 100%; /* Escala la imagen para no superar el ancho del contenedor */
+    width: 95%;
+    max-width: 500px; /* Escala la imagen para no superar el ancho del contenedor */
     max-height: 110%; /* Escala la imagen para no superar la altura del contenedor */
     object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
 }
 
 .imgIntroduccion{
-    max-width: 170%; /* Escala la imagen para no superar el ancho del contenedor */
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Escala la imagen para no superar el ancho del contenedor */
     max-height: 100%; /* Escala la imagen para no superar la altura del contenedor */
 }
 
 .imagenAbajo{
-    position: absolute; /* Posiciona la imagen relativa al contenedor */
-    bottom: 0; /* Alinea al fondo del div */
-    left: 0; /* Alinea a la izquierda del div */
-    width: 30%; /* Ancho de la imagen */
-    height: 30%px; /* Alto de la imagen */
-    object-fit: contain; /* Asegura que la imagen no se deforme */
+    width: auto; /* Ancho de la imagen */
+    height: 110px; /* Alto de la imagen */
+    object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
+    position: absolute;
+    left: 0;
+}
+
+.imgPortada{
+    width: 115%;
+    height: auto;
+    max-width: 500px; /* Escala la imagen para no superar el ancho del contenedor */
+    object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
 }

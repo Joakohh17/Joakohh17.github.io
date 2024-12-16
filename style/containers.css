@@ -1,16 +1,12 @@
 .containerHead {
     position: relative;
-    height: 100vh;
+    height: 900px;
     width: 100%;  /* Hace que el div ocupe todo el ancho de la pantalla */
+
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
     text-align: center;
-    background-image: url('../resources/fondoPasaporte4.png');
-    background-size: 125% 90%; /* Ajusta la imagen para que cubra todo el div */
-    background-position: top; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .containerTituloSeccion {
@@ -82,7 +78,7 @@
 }
 
 .container{
-    height: 80vh;
+    height: 80%;
     position: relative;
     text-align: center;
     display: flex;
@@ -90,10 +86,11 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
+    margin-top: 15%;
 }
 
 .containerWithoutPadding{
-    height: 80vh;
+    height: 80%;
     width: 100%;
     position: relative;
     text-align: center;
@@ -102,10 +99,11 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 0px 10px; /* Espacio adicional interno a los lados */
+    margin-top: 10%;
 }
 
 .containerBig{
-    height: 100vh;
+    height: auto;
     position: relative;
     text-align: center;
     display: flex;
@@ -113,6 +111,7 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
+    margin-top: 10%;
 }
 
 .containerContentSection{
@@ -124,7 +123,7 @@
 
 }
 .containerIntroduction {
-    height: 100vh;
+    height: 100%;
     position: relative;
     text-align: center;
     display: flex;
@@ -275,4 +274,10 @@
     background-position: center; /* Centra la imagen */
     opacity: 0.5; /* Ajusta la transparencia */
     z-index: -1;
+}
+
+.containerLogoAbajo{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
