@@ -1,12 +1,20 @@
 body {
     display: none;
     font-family: 'Dancing Script', cursive;
-    background-color: #e1dbd6;
+    /*background-color: #e1dbd6;*/
+    background-image: url("../resources/wallpaper.png");
+    background-repeat: repeat;
     max-width: 1000px; /* Máximo 500 píxeles de ancho */
     width: 100%; /* El ancho puede ajustarse hasta 500px */
     margin: 0px auto; /* Centra horizontalmente */
     padding: 0px 0px; /* Espacio adicional interno a los lados */
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
 }
 
 h1{
