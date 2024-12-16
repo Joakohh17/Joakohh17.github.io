@@ -223,19 +223,9 @@ input, textarea{
     max-height: 100%; /* Escala la imagen para no superar la altura del contenedor */
 }
 
-.imagenAbajoDcha{
+.imagenAbajo{
     width: 100px; /* Ancho de la imagen */
     height: auto; /* Alto de la imagen */
-    position: absolute;
-    right: 10px;
-    opacity: 0.7;
-}
-
-.imagenAbajoIzda{
-    width: 100px; /* Ancho de la imagen */
-    height: auto; /* Alto de la imagen */
-    position: absolute;
-    left: 10px;
     opacity: 0.7;
 }
 

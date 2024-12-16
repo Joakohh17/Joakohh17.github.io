@@ -86,7 +86,7 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .containerWithoutPadding{
@@ -276,7 +276,16 @@
     z-index: -1;
 }
 
-.containerLogoAbajo{
+.containerLogoAbajoDcha{
     width: 100%;
     height: auto;
+    text-align: right; /* Alinea todo el contenido a la derecha */
+    padding: 0px 10px;
+}
+
+.containerLogoAbajoIzd{
+    width: 100%;
+    height: auto;
+    text-align: left; /* Alinea todo el contenido a la derecha */
+    padding: 0px 30px;
 }
