@@ -223,12 +223,20 @@ input, textarea{
     max-height: 100%; /* Escala la imagen para no superar la altura del contenedor */
 }
 
-.imagenAbajo{
-    width: auto; /* Ancho de la imagen */
-    height: 110px; /* Alto de la imagen */
-    object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
+.imagenAbajoDcha{
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Alto de la imagen */
     position: absolute;
-    left: 0;
+    right: 10px;
+    opacity: 0.7;
+}
+
+.imagenAbajoIzda{
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Alto de la imagen */
+    position: absolute;
+    left: 10px;
+    opacity: 0.7;
 }
 
 .imgPortada{
