@@ -26,7 +26,7 @@ function sendEmail() {
         }
     }
 
-    if (name.trim() !== "" && allergies.trim() !== "" && completedAssistance === true) {
+    if (name.trim() !== "" && completedAssistance === true) {
 
         const srcImageButtonOriginal = document.getElementById("imageSendButton").src;
         document.getElementById("imageSendButton").src = "resources/brujula.gif";
@@ -58,7 +58,7 @@ function sendEmail() {
             });
     }
     else {
-        alert("Los campos obligatiorios no estan rellenos");
+        alert("Necesitamos que rellenemos los campos obligatorios: Asistencia, Nombres");
     }
 }
 
