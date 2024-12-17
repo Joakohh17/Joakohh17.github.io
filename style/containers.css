@@ -100,7 +100,6 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 10px; /* Espacio adicional interno a los lados */
-    max-width: 450px;
 }
 
 .containerContentSection{
