@@ -86,7 +86,6 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
-    margin-top: 10%;
 }
 
 .containerWithoutPadding{
@@ -98,8 +97,7 @@
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-    padding: 0px 10px; /* Espacio adicional interno a los lados */
-    margin-top: 10%;
+    padding: 25px 10px; /* Espacio adicional interno a los lados */
 }
 
 .containerBig{
@@ -111,11 +109,10 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
-    margin-top: 10%;
 }
 
 .containerContentSection{
-    margin-top: 25px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -212,7 +209,7 @@
 .containerFormulary{
     text-align: left;
     overflow: auto; /* Habilita scroll */
-    background-color: #e1dbd6;
+    background-image: url("../resources/wallpaper.png");
     padding: 20px;
     border-radius: 10px;
     height: auto;
@@ -279,12 +276,12 @@
     width: 100%;
     height: auto;
     text-align: right; /* Alinea todo el contenido a la derecha */
-    padding: 0px 10px;
+    padding: 10px 15px;
 }
 
 .containerLogoAbajoIzd{
     width: 100%;
     height: auto;
     text-align: left; /* Alinea todo el contenido a la derecha */
-    padding: 0px 30px;
+    padding: 10px 15px;
 }

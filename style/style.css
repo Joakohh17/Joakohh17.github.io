@@ -46,13 +46,12 @@ p, label{
 
 a{
     text-decoration: none;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    color: #545454;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid black;
-    border-radius: 10px;
     cursor: pointer;
+}
+
+a img{
+    height: 60px;
+    width: 60px;
 }
 
 input, textarea{
@@ -156,19 +155,15 @@ input, textarea{
 }
 
 .buttonStyle{
-    width: 60px;
-    height: 60px;
     position: relative;
-    padding: 0px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid black;
-    border-radius: 10px;
+    border: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .buttonStyle img{
-    width: 100%;             /* La imagen ocupa todo el botón */
-    height: 100%;            /* Mantiene proporciones */
+    width: 60px;             /* La imagen ocupa todo el botón */
+    height: 60px;            /* Mantiene proporciones */
 }
 
 .modalFormulary {
