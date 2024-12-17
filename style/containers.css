@@ -160,9 +160,25 @@
 }
 
 .containerFinal{
-    margin-top: 20%;
-    height: 200px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    background-color: rgba(225, 219, 214, 0.4); /* 50% de transparencia */
 }
+
+.containerFinal img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
 
 .containerGallery {
     position: relative;

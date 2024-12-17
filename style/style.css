@@ -32,9 +32,14 @@ h4{
     color: #545454;
 }
 
-h5, h6{
+h5{
     font-family: "Times New Roman", Times, serif;
     font-size: clamp(1.2rem, 2vw, 2.2rem);
+    color: #545454;
+}
+
+h6{
+    font-size: clamp(1.0rem, 1.5vw, 2.0rem);
     color: #545454;
 }
 
@@ -197,7 +202,6 @@ input, textarea{
 .imgBrujula {
     height: 100px;
     width: 100px;
-    
 }
 
 .imgLogo {
@@ -208,7 +212,7 @@ input, textarea{
 
 .imgInvitacion{
     width: 95%;
-    max-width: 500px; /* Escala la imagen para no superar el ancho del contenedor */
+    max-width: 450px; /* Escala la imagen para no superar el ancho del contenedor */
     max-height: 110%; /* Escala la imagen para no superar la altura del contenedor */
     object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
 }
@@ -216,7 +220,7 @@ input, textarea{
 .imgIntroduccion{
     width: 100%;
     height: auto;
-    max-width: 500px; /* Escala la imagen para no superar el ancho del contenedor */
+    max-width: 450px; /* Escala la imagen para no superar el ancho del contenedor */
     max-height: 100%; /* Escala la imagen para no superar la altura del contenedor */
 }
 
