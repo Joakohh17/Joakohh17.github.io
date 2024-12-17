@@ -9,12 +9,6 @@ body {
     margin: 0px auto; /* Centra horizontalmente */
     padding: 0px 0px; /* Espacio adicional interno a los lados */
     box-sizing: border-box;
-
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    text-align: center;
 }
 
 h1{
@@ -238,8 +232,8 @@ input, textarea{
 }
 
 .imgPortada{
-    width: 115%;
-    height: auto;
-    max-width: 500px; /* Escala la imagen para no superar el ancho del contenedor */
-    object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
+    width: 100%;
+    height: 800px;
+    max-width: 450px; /* Escala la imagen para no superar el ancho del contenedor */
+    object-fit: cover; /* Ajusta la imagen para que se vea completa sin deformarse */
 }
