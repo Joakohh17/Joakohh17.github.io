@@ -66,12 +66,14 @@ function sendEmail() {
 
 function abrirModal() {
     document.getElementById('modalIdFormulary').style.display = 'flex';
+    document.getElementById('contFinal').style.display = 'none';
 }
 
 // Función para cerrar el modal
 function cerrarModal() {
-
     document.getElementById('modalIdFormulary').style.display = 'none';
+    document.getElementById('contFinal').style.display = 'flex';
+
     document.getElementById('name').value = "";
     document.getElementById('allergies').value = "";
     document.getElementById('message').value = "";
