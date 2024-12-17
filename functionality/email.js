@@ -1,6 +1,5 @@
 emailjs.init('nJbXVmO-q9nEj45z8');
 
-
 function sendEmail() {
 
     const radios = document.getElementsByName("response");

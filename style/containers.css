@@ -13,6 +13,7 @@
     position: relative;
     width: 100%; /* Ancho completo del contenedor */
     height: 250px; /* Altura del div */
+    max-width: 450px;
     
     display: flex;
     flex-direction: column; /* Para apilar texto verticalmente */
@@ -86,6 +87,7 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 25px; /* Espacio adicional interno a los lados */
+    max-width: 450px;
 }
 
 .containerWithoutPadding{
@@ -98,17 +100,7 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     padding: 25px 10px; /* Espacio adicional interno a los lados */
-}
-
-.containerBig{
-    height: auto;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Para apilar texto verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    padding: 25px 25px; /* Espacio adicional interno a los lados */
+    max-width: 450px;
 }
 
 .containerContentSection{
@@ -117,8 +109,8 @@
     flex-direction: column; /* Para apilar texto verticalmente */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-
 }
+
 .containerIntroduction {
     height: 100%;
     position: relative;
@@ -189,6 +181,7 @@
     justify-content: center; /* Centrar verticalmente */
     width: 100%;
     height: auto;
+    max-width: 450px;
 }
 
 .containerPhoto {
