@@ -182,7 +182,13 @@
 
 .containerGallery {
     position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para apilar texto verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
     width: 100%;
+    height: auto;
 }
 
 .containerPhoto {
