@@ -20,6 +20,9 @@
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     text-align: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
 }
 
 .containerTituloSeccion::before {
@@ -38,8 +41,9 @@
 }
 
 .containerTituloSeccion img{
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
+    opacity: 0.8;
 }
 
 

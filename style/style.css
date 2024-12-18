@@ -18,7 +18,7 @@ h1{
 }
 
 h2{
-    font-size: clamp(4rem, 6vw, 5rem);
+    font-size: clamp(6rem, 7vw, 7rem);
     color: #545454;
 }
 
@@ -62,10 +62,6 @@ input, textarea{
     background-color: #e1dbd6;
     border: 1px solid;
 }
-
-input[type="radio"] {
-    accent-color: #e1dbd6; /* Cambia el color del botón */
-  }
 
 @keyframes escribir {
     0% {
@@ -249,8 +245,8 @@ input[type="radio"] {
 }
 
 .imgDressCode {
-    width: 75%;
-    height: 75%; /* Escala la imagen para no superar la altura del contenedor */
+    width: 65%;
+    height: 65%; /* Escala la imagen para no superar la altura del contenedor */
     object-fit: contain; /* Ajusta la imagen para que se vea completa sin deformarse */
     max-width: 450px; /* Escala la imagen para no superar el ancho del contenedor */
 }
